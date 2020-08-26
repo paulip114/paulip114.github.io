@@ -50,7 +50,7 @@ body{
 @media (min-width: 350px) {
     .CardV {
       max-width: 20rem;
-      max-height: 38rem; } }
+      max-height: 35rem; } }
 @media (min-width: 576px) {
     .CardV {
       max-width: 20rem;
