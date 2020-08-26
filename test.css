@@ -10,7 +10,7 @@ body{
 }
 
 .backgroundGradient {    
-    background-image: linear-gradient(135deg, #0084FF 10%, #90CAF9 100%);
+    background-image: linear-gradient(135deg, #0070ca 10%, #001e34 100%);
     position: fixed;
     overflow: hidden;
     top: 0;
