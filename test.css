@@ -40,7 +40,7 @@ body{
     background-color: white; 
     width: 30rem; height: 42rem; 
     border-radius: 5px; 
-    box-shadow: rgba(0,0,0,0.2)0 0 10px;
+    box-shadow: rgba(0,0,0,0.2)0 0 20px;
     align-items: center;
 }
 
@@ -87,6 +87,7 @@ body{
     border-radius: 3px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     padding: 0px;
     border: #000;
     background-color: #ffffff;
@@ -114,6 +115,7 @@ body{
     border-radius: 3px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
     padding: 0px;
     border: #000;
     background-color: #ffffff;
