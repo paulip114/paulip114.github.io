@@ -46,11 +46,11 @@ body{
 @media (min-width: 300px) {
     .CardV {
       max-width: 20rem;
-      max-height: 35rem; } }
+      max-height: 30rem; } }
 @media (min-width: 350px) {
     .CardV {
       max-width: 20rem;
-      max-height: 35rem; } }
+      max-height: 30rem; } }
 @media (min-width: 576px) {
     .CardV {
       max-width: 20rem;
@@ -58,11 +58,11 @@ body{
 @media (min-width: 768px) {
     .CardV {
     max-width: 30rem;
-    max-height: 42rem; } }
+    max-height: 38rem; } }
 @media (min-width: 992px) {
     .CardV {
       max-width: 30rem;
-      max-height: 42rem; } }
+      max-height: 38rem; } }
 @media (min-width: 1200px) {
     .CardV {
       max-width: 30rem;
