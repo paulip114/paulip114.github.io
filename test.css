@@ -45,12 +45,12 @@ body{
 }
 @media (min-width: 300px) {
     .CardV {
-      max-width: 20rem;
-      max-height: 30rem; } }
+      max-width: 19rem;
+      max-height: 29rem; } }
 @media (min-width: 350px) {
     .CardV {
       max-width: 20rem;
-      max-height: 30rem; } }
+      max-height: 29rem; } }
 @media (min-width: 576px) {
     .CardV {
       max-width: 20rem;
