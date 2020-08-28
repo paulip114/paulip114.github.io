@@ -35,7 +35,7 @@ body{
 }
 @media (min-width: 350px) {
     .Container {
-    margin-bottom: 1rem; } }
+    margin-bottom: 2rem; } }
 
 .CardV{
     display: flex;
