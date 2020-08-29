@@ -2,773 +2,321 @@
 <html lang="en">
 
 <head>
-    <title>Paul's Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-    <link rel="stylesheet" href="images/icon/icomoon.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="css/ionicons.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/flaticon.css"> -->
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live Resume :: Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/live-resume.css">
 </head>
 
 <body>
-
-
-    <!-- <nav id="navbar" class="navbar">
-        <ul class="nav-menu">
-            <li>
-                <a data-scroll="home" href="#home" class="dot active">
-                    <span>Home</span>
-                </a>
-            </li>
-            <li>
-                <a data-scroll="about" href="#about" class="dot">
-                    <span>About</span>
-                </a>
-            </li>
-            <li>
-                <a data-scroll="services" href="#services" class="dot">
-                    <span>Services</span>
-                </a>
-            </li>
-            <li>
-                <a data-scroll="work" href="#work" class="dot">
-                    <span>Gallery</span>
-                </a>
-            </li>
-            <li>
-                <a data-scroll="contact" href="#contact" class="dot">
-                    <span>Contact</span>
-                </a>
-            </li>
-        </ul>
-    </nav> -->
-    <!-- End Nav Section -->
-
-    <!-- Start Home Section -->
-    <section id="home" class="hero-wrap js-fullheight" style="background-image: url(images/IMG_7820.JPG);"
-        data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-left">
-                <div class="col-lg-7 ftco-animate d-flex align-items-center">
-                    <div class="text text-center">
-                        <h1 class="logo"><a href="index.html">Home<small>Software Engineer / Photographer</small></a>
-                        </h1>
-                        <h1 class="mb-4">-- PAUL --</h1>
-                        <h2 class="mb-4">Ip Chak Pong</h2>
-
-                        <p class="mb-4">"Great men are not born great, they grow great"</p>
-                        <p class="mb-2">--Don Vito Corleone</p>
-                        <p class="mt-5"><a href="#contact" class="btn-custom">Contact me</a></p>
+    <header>
+        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/share.svg"
+                alt="share" class="btn-img">
+            SHARE</button>
+        <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="index.html" class="nav-link active">HOME</a>
+            <!-- <a href="resume.html" class="nav-link">RESUME</a> -->
+            <a href="#" class="nav-link">PROGRAMMING</a>
+            <a href="./photography/photography.html" class="nav-link">PHOTOGRAPHY</a>
+            <a href="#" class="nav-link">BLOG</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+        </nav>
+        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
+    </header>
+    <div class="content-wrapper">
+        <aside>
+            <div class="profile-img-wrapper">
+                <img src="assets/images/Profile2.png" alt="profile">
+            </div>
+            <h1 class="profile-name">IP Chak Pong</h1>
+            <div class="text-center">
+                <span class="badge badge-white badge-pill profile-designation">Software Engineer</span>
+            </div>
+            <nav class="social-links">
+                <a href="#!" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#!" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                <!-- <a href="#!" class="social-link"><i class="fab fa-behance"></i></a> -->
+                <a href="#!" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#!" class="social-link"><i class="fab fa-github"></i></a>
+            </nav>
+            <div class="widget">
+                <h5 class="widget-title">personal information</h5>
+                <div class="widget-content">
+                    <p>BIRTHDAY : 14 January 1999</p>
+                    <!-- <p>WEBSITE : www.example.com</p> -->
+                    <p>PHONE : +886 0909538667</p>
+                    <p>E-MAIL : paulip114@gmail.com</p>
+                    <p>Location : TW / HK</p>
+                    <button class="btn btn-download-cv btn-primary rounded-pill"
+                        onclick="location.href='./images/CV.pdf'" download="CV.pdf"> <img
+                            src="assets/images/download.svg" alt="download" class="btn-img">DOWNLOAD CV </button>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">LANGUAGES</h5>
+                        <p>English : fluent</p>
+                        <p>Manderin : native</p>
+                        <p>Cantonese : native</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Home Section -->
-
-    <!-- Start About Me Section -->
-    <section class="ftco-about img ftco-section" id="about">
-        <div class="container">
-            <div class="row d-flex no-gutters">
-                <div class="col-md-6 col-lg-6 d-flex">
-                    <div class="img-about img d-flex align-items-stretch">
-                        <div class="overlay"></div>
-                        <div class="img img-video d-flex align-self-stretch align-items-center"
-                            style="background-image:url(images/film02.jpg);">
-                            <div class="video justify-content-center">
-                                <!-- <a href="https://vimeo.com/45830194" -->
-                                <!-- class=" d-flex justify-content-center align-items-center">
-                                    <span class="ion-ios-play"></span> -->
-                                <!-- </a> -->
-                            </div>
-                        </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">INTERESTS</h5>
+                        <p>Photography</p>
+                        <p>Filming</p>
+                        <p>Movies</p>
+                        <p>Baseball</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 pl-md-5">
-                    <div class="heading-section ftco-animate">
-                        <h2 class="mb-4">2019-2020 Graduation production, <br>Director Of Photography</h2>
-                        <p>This short-film is called "窗外的黑羊 | Herd Behavior" which is about the story between reporter
-                            and KOL. Nowadays, we can see may public figures have suffered different level of verbal
-                            bullying due to private actions. However, the stories
-                            written by the reporters are forceful. It will definitely guide public opinion. These
-                            bullying seriously affect their physical and mental health. We want to give the public an
-                            opportunity to reflect on this evil social phenomenon
-                            so this film was shoot.</p>
+            </div>
+        </aside>
+        <main>
+            <section class="intro-section">
+                <h2 class="section-title">Hello, </h2>
+                <p>I'm a software engineer and photographer from Hong Kong, studying in Taiwan National Chung Cheng
+                    University. I am interested in front-end technology, experienced in using React.js and React Native.
+                    Apart from front-end, I'm also interested in the field of Computer Vision. In Year 3 project, I used
+                    TensorFlow Inception-V3 model to classify customers' clothing attributes. That project won the
+                    champion in the school competition! Moreover, I am a freelance photographer. Experienced in both
+                    static photography and filming.</p>
+                <a href="#!" class="btn btn-warning btn-hire-me">PROGRAMMING WORKS</a>
+                <a href="./photography/photography.html" class="btn btn-warning btn-hire-me">PHOTOGRAPHY WORKS</a>
+            </section>
 
-                        <!-- <div class="counter-wrap ftco-animate d-flex my-md-4">
-                            <div class="text">
-                                <p class="mb-4">
-                                    <span class="number" data-number="15">0</span>
-                                    <span>Project complete</span>
+            <hr style="width: auto;height: 2px;" />
+
+            <section class="resume-section">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- <h6 class="section-subtitle">RESUME</h6> -->
+                        <h2 class="section-title">EDUCATION</h2>
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2017 - 2021</span>
+                                <h6 class="time-line-item-title">Bachelor In Management Informantion System</h6>
+                                <p class="time-line-item-subtitle">NATIONAL CHUNG CHENG UNIVERSITY</p>
+                                <p class="time-line-item-content">I learned programming, web
+                                    designing, accounting, management, etc. To fulfil my start-up dream, I joined the
+                                    Entrepreneurship and Innovation Society which provide many opportunities for
+                                    me to achieve my plan.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- <h6 class="section-subtitle">RESUME</h6> -->
+                        <h2 class="section-title">Experience</h2>
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2015 - 2018</span>
+                                <h6 class="time-line-item-title">HONG KONG NATIONAL BASEBALL TEAM MEMBER</h6>
+                                <p class="time-line-item-subtitle">HONG KONG NATIONAL BASEBALL TEAM & JUNIOR SQUAD</p>
+                                <p class="time-line-item-content">Represented HONG KONG in Internation Baseball Games.
                                 </p>
-                            </div>
-                        </div> -->
-                        <div class="d-flex w-100">
-                            <a href="https://youtu.be/Hobu0sZhPMI"><img class="img img-about"
-                                    style=" max-width: 40rem; " src="images/film01.jpg">
-                            </a>
-
-
-                            <!-- <div class="img img-about-2 mr-2 ml-2" style="background-image: url(images/about-3.jpg);"></div> -->
-                        </div>
-                        <blockquote class="blockquote mt-5">
-                            <p class="mb-2">" First time as a director of photography(DP) , the process is very painful:
-                                the shooting schedule is
-                                really fast, lack of sleep, stressful and leading my crew. Finally, we survived the pain
-                                and felt the sense of accomplishment! "
-                            </p>
-                            <span>&mdash; Premiere in 2020</span>
-                        </blockquote>
+                                <a href="https://twbsball.dils.tku.edu.tw/wiki/index.php/%E8%91%89%E6%BE%A4%E9%82%A6"
+                                    target="_blank" class="btn btn-warning btn-more">MORE</a>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2018</span>
+                                <h6 class="time-line-item-title">Maintenance Technician</h6>
+                                <p class="time-line-item-subtitle">NATIONAL CHUNG CHENG UNIVERSITY</p>
+                                <p class="time-line-item-content">Maintained the Computer Center's computers.
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2018 - 2019</span>
+                                <h6 class="time-line-item-title">Assistant Photographer</h6>
+                                <p class="time-line-item-subtitle">The Department of Communication Graduation production
+                                    @CCU
+                                </p>
+                                <p class="time-line-item-content">The MV is called "在身邊 | By My Side" which cooperate
+                                    with the band MOTIV. In this MV we are talking about the photographer who got lost
+                                    in his creation. He tried to figure out what is his original intention and back to
+                                    his childhood in imagination</p>
+                                <a href="./photography/photography.html#about2"
+                                    target="_blank" class="btn btn-warning btn-more">MORE</a>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2019 SUMMER INTERN</span>
+                                <h6 class="time-line-item-title">Assistant of Product Manager</h6>
+                                <p class="time-line-item-subtitle">戰國科技 - VVARTECH</p>
+                                <p class="time-line-item-content">We were developing a SaaS
+                                    for education industry. As the assistant of PM, I did market survey, the test
+                                    specifications and even developed the webpage for promoting our SaaS product.</p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2019 - 2020</span>
+                                <h6 class="time-line-item-title">Director of Photographer</h6>
+                                <p class="time-line-item-subtitle">The Department of Communication Graduation production
+                                    @CCU
+                                </p>
+                                <p class="time-line-item-content">The short-film is called "窗外的黑羊 | Herd Behavior"
+                                    which is about the story between reporter and KOL. Nowadays, we can see may public
+                                    figures have suffered different level of verbal bullying due to private actions.
+                                    However, the stories written by the reporters are forceful. It will definitely guide
+                                    public opinion. These bullying seriously affect their physical and mental health. We
+                                    want to give the public an opportunity to reflect on this evil social phenomenon so
+                                    this film was shoot.</p>
+                                <a href="./photography/photography.html#about"
+                                    target="_blank" class="btn btn-warning btn-more">MORE</a>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2020 SUMMER</span>
+                                <h6 class="time-line-item-title">Freelance Developer</h6>
+                                <p class="time-line-item-subtitle">--</p>
+                                <p class="time-line-item-content">Using React.js and React Native for Web development
+                                    and App development
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- End About Me Section -->
-
-    <!-- Start About Me-2 Section -->
-    <section class="ftco-about img ftco-section" id="about">
-        <div class="container">
-            <div class="row d-flex no-gutters">
-                <div class="col-md-6 col-lg-6 ">
-                    <div class="heading-section ftco-animate">
-                        <h2 class="mb-4">2018-2019 Graduation production, <br>Assistant Of Photography</h2>
-                        <p>This MV is called "在身邊 | By My Side" which cooperate with the band MOTIV. In this MV we are
-                            talking about the photographer who got lost in his creation. He tried to figure out what is
-                            his original intention and back to his childhood in imagination</p>
-
-                        <div class="counter-wrap ftco-animate d-flex my-md-4">
-                            <div class="text">
-                                <!-- <p class="mb-4">
-                                    <span class="number" data-number="15">0</span>
-                                    <span>Project complete</span> 
-                                </p> -->
-                            </div>
+            </section>
+            <section class="services-section">
+                <h6 class="section-subtitle">WHAT I DO</h6>
+                <h2 class="section-title">SERVICES</h2>
+                <div class="row">
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/001-target.svg" alt="target">
                         </div>
-                        <div class="d-flex w-100">
-                            <a href="https://youtu.be/YUIhhOwGJG0"><img class="img img-about"
-                                    style=" max-width: 40rem; " src="images/MV001.jpg">
-                            </a>
-
-
-                            <!-- <div class="img img-about-2 mr-2 ml-2" style="background-image: url(images/about-3.jpg);"></div> -->
-                        </div>
-                        <blockquote class="blockquote mt-5">
-                            <p class="mb-2">" It is really lucky to be invited into the crew of graduation production
-                                from different department. That is totally not my major in university although I love
-                                photography. A senior asked me for responsble as his assistant. I can't reject this
-                                valuable chance to broaden my horizon therefore I got this greatful experience! "
-                            </p>
-                            <span>&mdash; Premiere in 2019</span>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 d-flex pl-md-5">
-
-                    <div class="img-about img d-flex align-items-stretch">
-                        <div class="overlay"></div>
-                        <div class="img img-video d-flex align-self-stretch align-items-center"
-                            style="background-image:url(images/MV002.jpg);">
-                            <!-- <div class="video justify-content-center">
-                                <a href="https://vimeo.com/45830194"
-                                    class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-                                    <span class="ion-ios-play"></span>
-                                </a> -->
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- End About Me-2 Section -->
-
-    <!-- Start Services Section -->
-    <section id="services" class="ftco-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="row">
-                        <div class="col-md-5 heading-section ftco-animate pb-5">
-                            <h2 class="mb-4">Photography / Film-making / Advertising Services</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="media block-6 services d-block ftco-animate">
-                                <div class="icon"><span class="flaticon-video-camera"></span></div>
-                                <div class="media-body">
-                                    <h3 class="heading mb-3">Advertising Videos</h3>
-                                    <p>Want to enhance the firm's image or increase your customer base? We are going to
-                                        provide you the best advertising videos to grab your target audience!
-                                    </p>
+                        <div class="media-body">
+                            <h5 class="service-title">Web Designing</h5>
+                            <p class="service-description">HTML & CSS</p>
+                            <div class="progress" style="width: 50%; margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">85%
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="media block-6 services d-block ftco-animate">
-                                <div class="icon"><span class="flaticon-video-player"></span></div>
-                                <div class="media-body">
-                                    <h3 class="heading mb-3">Music Videos &amp; Short Films</h3>
-                                    <p>Finding a crew to fulfill your creative idea? Contact us and we will offer you a
-                                        surprise price!
-                                    </p>
+                            <p class="service-description">bootstrap</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="media block-6 services d-block ftco-animate">
-                                <div class="icon"><span class="flaticon-video-player-1"></span></div>
-                                <div class="media-body">
-                                    <h3 class="heading mb-3">Commercial Photography</h3>
-                                    <p>Need some static product photos for E-commerce? Feel free to contact us and let
-                                        us help you to expand your business territory!
-                                    </p>
-                                    <!-- <button class="btn btn-primary py-3 px-5" >123</button> -->
+                            <p class="service-description">React.js</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">65%
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 d-flex align-items-stretch">
-                    <div class="img w-100" style="background-image: url(images/film03.JPG);"></div>
-                </div>
-            </div>
-            <div class="row progress-circle pt-md-5">
-                <div class="col-md-7 order-md-last py-md-5">
-                    <div class="row">
-                        <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                            <div class="">
-                                <h2 class="text-center mb-4">Photography</h2>
-
-                                <!-- Progress bar 1 -->
-                                <div class="progress mx-auto" data-value='90'>
-                                    <span class="progress-left">
-                                        <span class="progress-bar border-primary"></span>
-                                    </span>
-                                    <span class="progress-right">
-                                        <span class="progress-bar border-primary"></span>
-                                    </span>
-                                    <div
-                                        class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                                        <div class="h5">90<sup class="small">%</sup></div>
-                                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/003-idea.svg" alt="bulb">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Graphic design</h5>
+                            <p class="service-description">Adobe PS</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">80%
                                 </div>
-                                <!-- END -->
                             </div>
-                        </div>
-
-                        <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                            <div class="">
-                                <h2 class="text-center mb-4">Creation</h2>
-
-                                <!-- Progress bar 1 -->
-                                <div class="progress mx-auto" data-value='80'>
-                                    <span class="progress-left">
-                                        <span class="progress-bar border-primary"></span>
-                                    </span>
-                                    <span class="progress-right">
-                                        <span class="progress-bar border-primary"></span>
-                                    </span>
-                                    <div
-                                        class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                                        <div class="h5">80<sup class="small">%</sup></div>
-                                    </div>
+                            <p class="service-description">Adobe AI</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
                                 </div>
-                                <!-- END -->
                             </div>
-                        </div>
-
-                        <div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-                            <div class="">
-                                <h2 class="text-center mb-4">Production</h2>
-
-                                <!-- Progress bar 1 -->
-                                <div class="progress mx-auto" data-value='75'>
-                                    <span class="progress-left">
-                                        <span class="progress-bar border-primary"></span>
-                                    </span>
-                                    <span class="progress-right">
-                                        <span class="progress-bar border-primary"></span>
-                                    </span>
-                                    <div
-                                        class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-                                        <div class="h5">75<sup class="small">%</sup></div>
-                                    </div>
-                                </div>
-                                <!-- END -->
-                            </div>
-                        </div>
-
-                        <div class="p-md-4 mt-4">
-                            <div class="col-md-8 ftco-animate">
-                                <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right
-                                    at the coast.</p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 d-flex align-items-stretch">
-                    <div class="img w-100" style="background-image: url(images/IMG_6743.JPG);"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Services Section -->
-
-    <!-- Start Testimonials Section -->
-    <section id="work" class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-4 heading-section text-center ftco-animate pb-5">
-                    <h2 class="mb-4">Selected Projects</h2>
-                    <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                        is a paradisematic country.</p> -->
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid px-md-0">
-            <div class="row no-gutters">
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/01.jpg);">
-                        <a href="images/01-1.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Portrait</span>
-                                <h2><a href="work-single.html">Girl in flowers</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/02.jpg);">
-                        <a href="images/02-2.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>B&W</span>
-                                <h2><a href="work-single.html">The stairs</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/03.jpg);">
-                        <a href="images/03-3.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Nature</span>
-                                <h2><a href="work-single.html">Time Tunnel</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/04.jpg);">
-                        <a href="images/04-4.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Creative</span>
-                                <h2><a href="work-single.html">My Silhouettes</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/05.jpg);">
-                        <a href="images/05-5.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>B&W</span>
-                                <h2><a href="work-single.html">The Pensive Man</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/06.jpg);">
-                        <a href="images/06-6.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Nature</span>
-                                <h2><a href="work-single.html">Calendar Line</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/07.jpg);">
-                        <a href="images/07-7.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Street Shot</span>
-                                <h2><a href="work-single.html">Blue tone</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/08.jpg);">
-                        <a href="images/08-8.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Creative</span>
-                                <h2><a href="work-single.html">The Bird Inside Buildings</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/09.jpg);">
-                        <a href="images/09-9.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Nature</span>
-                                <h2><a href="work-single.html">Beautiful Campus</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/10.jpg);">
-                        <a href="images/10-10.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Stills</span>
-                                <h2><a href="work-single.html">The Reporter</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/11.jpg);">
-                        <a href="images/11-11.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Nature</span>
-                                <h2><a href="work-single.html">Far Away From Heaven</a></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="model img d-flex align-items-end" style="background-image: url(images/12.jpg);">
-                        <a href="images/12-12.jpg"
-                            class="icon image-popup d-flex justify-content-center align-items-center">
-                            <span class="icon-expand"></span>
-                        </a>
-                        <div class="desc w-100 px-4">
-                            <div class="text w-100 mb-3">
-                                <span>Documentary</span>
-                                <h2><a href="work-single.html">School Event</a></h2>
-                            </Div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Project Section -->
-
-    <!-- <section class="ftco-section testimony-section" id="testimonial">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-4 heading-section ftco-animate">
-                    <span class="subheading">Testimony</span>
-                    <h2 class="mb-4">Our satisfied customer says</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts. Separated they live in</p>
-                </div>
-            </div>
-            <div class="row ftco-animate">
-                <div class="col-md-12">
-                    <div class="carousel-testimony owl-carousel">
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="pl-5">
-                                        <p class="name">Garreth Smith</p>
-                                        <span class="position">CEO Founder of Commercial Building</span>
-                                    </div>
+                            <p class="service-description">Adobe PR</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">75%
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/002-development.svg" alt="development">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Development</h5>
+                            <p class="service-description">Python</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
                                 </div>
-                                <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="pl-5">
-                                        <p class="name">Garreth Smith</p>
-                                        <span class="position">CEO Founder of Interior Design</span>
-                                    </div>
+                            </div>
+                            <p class="service-description">Java</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
+                                </div>
+                            </div>
+                            <p class="service-description">C#</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">50%
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="pl-5">
-                                        <p class="name">Garreth Smith</p>
-                                        <span class="position">Exterior Designer</span>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/004-smartphone.svg" alt="smartphone">
                         </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="pl-5">
-                                        <p class="name">Garreth Smith</p>
-                                        <span class="position">Landscape Designer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text">
-                                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the
-                                        countries Vokalia and Consonantia, there live the blind texts.</p>
-                                    <div class="pl-5">
-                                        <p class="name">Garreth Smith</p>
-                                        <span class="position">System Analyst</span>
-                                    </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Mobile design</h5>
+                            <p class="service-description">React Native</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section> -->
 
-    <!-- Start Contact Section -->
-    <section class="ftco-section contact-section" id="contact">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-4 heading-section text-center ftco-animate">
-                    <h2 class="mb-4">Contact Me</h2>
-                    <!-- <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                        is a paradisematic country.</p> -->
-                </div>
-            </div>
-
-            <div class="row mb-5" style="justify-content: center;">
-                <div class="col-md-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box text-center p-4">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-phone"></span>
+            </section>
+            <hr style="height: 1px; margin: 50px;" />
+            <!-- <section class="testimonial-section">
+                <div id="testimonialCarousel" class="testimonial-carousel carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.</p>
+                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
+                            <p class="testimonial-name">Nout Golstein</p>
                         </div>
-                        <div>
-                            <!-- <h3 class="mb-4">Contact Number</h3> -->
-                            <p><a href="tel://0909538667"><U>+886 0909538667</U></a></p>
+                        <div class="carousel-item">
+                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.</p>
+                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
+                            <p class="testimonial-name">Nout Golstein</p>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.</p>
+                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
+                            <p class="testimonial-name">Nout Golstein</p>
                         </div>
                     </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                    </ol>
                 </div>
-                <div class="col-md-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box text-center p-4">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-envelop"></span>
-                        </div>
-                        <div>
-                            <!-- <h3 class="mb-4">Email Address</h3> -->
-                            <p><a href="mailto:paulip114@gmail.com"><U>paulip114@gmail.com</U></a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box text-center p-4">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-facebook2"></span>
-                        </div>
-                        <div>
-                            <!-- <h3 class="mb-4">Facebook</h3> -->
-                            <p><a href="https://www.facebook.com/paul.ip.5"><U>Ip Chak Pong</U></a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box text-center p-4">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-github"></span>
-                        </div>
-                        <div>
-                            <!-- <h3 class="mb-4">Github</h3> -->
-                            <p><a href="https://github.com/paulip114"><U>paulip114</U></a></p>
-                        </div>
-                    </div>
+            </section> -->
 
-                </div>
-
-            </div>
-
-            <!-- <div class="row block-9">
-                <div class="col-md-6 ftco-animate">
-                    <form action="#" class="contact-form p-4 p-md-5 py-md-5">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control"
-                                placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col-md-6 d-flex align-items-stretch">
-                    <div id="map"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    End Contact Section -->
-
-
-            <!-- Start Footer Section -->
-            <footer class="ftco-footer py-5">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-
-                            <p>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script> All rights reserved | This template is made with <i class="icon-heart"
-                                    aria-hidden="true"></i> by <a href="https://colorlib.com"
-                                    target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
-                            <!-- 
-                            <ul class="ftco-footer-social p-0">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul> -->
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- End Footer Section -->
-
-
-            <!-- loader -->
-            <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-                    <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-                    <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                        stroke="#F96D00" /></svg>
-            </div>
-
-
-            <script src="js/jquery.min.js"></script>
-            <script src="js/jquery-migrate-3.0.1.min.js"></script>
-            <script src="js/popper.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/jquery.easing.1.3.js"></script>
-            <script src="js/jquery.waypoints.min.js"></script>
-            <script src="js/jquery.stellar.min.js"></script>
-            <script src="js/owl.carousel.min.js"></script>
-            <script src="js/jquery.magnific-popup.min.js"></script>
-            <script src="js/aos.js"></script>
-            <script src="js/jquery.animateNumber.min.js"></script>
-            <script src="js/scrollax.min.js"></script>
-            <script src="js/main.js"></script>
+            <footer>PAUL's Resume buildwith <a href="https://www.bootstrapdash.com" target="_blank"
+                    rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
+        </main>
+    </div>
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/live-resume.js"></script>
 </body>
 
 </html>
