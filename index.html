@@ -16,6 +16,66 @@
         <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/share.svg"
                 alt="share" class="btn-img">
             SHARE</button>
+        <p class="result"></p>
+        <input type="hidden" id="content-to-copy" />
+        <script>
+            // 選擇和 DOM 有關的元素
+            const btn = document.querySelector(".btn-share");
+            const result = document.querySelector(".result");
+
+            // 當使用者點擊分享時要帶入的資訊
+            const shareData = {
+                url: 'https://paulip114.github.io/', // 要分享的 URL
+                title: "Paul's Profolio", // 要分享的標題
+                // text: '好多眉眉角角啊',  要分享的文字內容
+            };
+
+            btn.addEventListener('click', () => {
+                // 判斷瀏覽器是否支援 Web Share API
+                if (navigator.share) {
+                    handleNavigatorShare();
+                } else {
+                    handleNotSupportNavigatorShare();
+                }
+            });
+
+            // 當瀏覽器支援 Web Share API 時
+            async function handleNavigatorShare() {
+                try {
+                    await navigator.share(shareData);
+                    result.textContent = '感謝你的的分享';
+                } catch (err) {
+                    // 使用者拒絕分享或發生錯誤
+                    const { name } = err;
+                    if (name === 'AbortError') {
+                        result.textContent = '您已取消分享此訊息';
+                    } else {
+                        result.textContent = err;
+                        console.log('發生錯誤', err);
+                    }
+                }
+            }
+
+            // 當瀏覽器不支援 Web Share API 時，點下去變成複製
+            function handleNotSupportNavigatorShare() {
+                const contentToCopy = document.querySelector('#content-to-copy');
+                contentToCopy.value = shareData.url;
+                contentToCopy.setAttribute('type', 'text'); // 不是 hidden 才能複製
+                contentToCopy.select();
+
+                try {
+                    const successful = document.execCommand('copy');
+                    const msg = successful ? '成功' : '失敗';
+                    alert(`${shareData.url} - 複製${msg}`);
+                } catch (err) {
+                    alert('Oops, unable to copy');
+                }
+
+                /* unselect the range */
+                contentToCopy.setAttribute('type', 'hidden');
+                window.getSelection().removeAllRanges();
+            }
+        </script>
         <nav class="collapsible-nav" id="collapsible-nav">
             <a href="index.html" class="nav-link active">HOME</a>
             <!-- <a href="resume.html" class="nav-link">RESUME</a> -->
@@ -40,7 +100,8 @@
                 <a href="https://www.facebook.com/paul.ip.5" class="social-link"><i class="fab fa-facebook-f"></i></a>
                 <!-- <a href="#!" class="social-link"><i class="fab fa-twitter"></i></a> -->
                 <!-- <a href="#!" class="social-link"><i class="fab fa-behance"></i></a> -->
-                <a href="https://www.linkedin.com/in/ipchakpong/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/ipchakpong/" class="social-link"><i
+                        class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/paulip114" class="social-link"><i class="fab fa-github"></i></a>
             </nav>
             <div class="widget">
@@ -140,8 +201,8 @@
                                     with the band MOTIV. In this MV we are talking about the photographer who got lost
                                     in his creation. He tried to figure out what is his original intention and back to
                                     his childhood in imagination</p>
-                                <a href="./photography/photography.html#about2"
-                                    target="_blank" class="btn btn-warning btn-more">MORE</a>
+                                <a href="./photography/photography.html#about2" target="_blank"
+                                    class="btn btn-warning btn-more">MORE</a>
                             </li>
                             <li class="time-line-item">
                                 <span class="badge badge-primary">2019 SUMMER INTERN</span>
@@ -164,8 +225,8 @@
                                     public opinion. These bullying seriously affect their physical and mental health. We
                                     want to give the public an opportunity to reflect on this evil social phenomenon so
                                     this film was shoot.</p>
-                                <a href="./photography/photography.html#about"
-                                    target="_blank" class="btn btn-warning btn-more">MORE</a>
+                                <a href="./photography/photography.html#about" target="_blank"
+                                    class="btn btn-warning btn-more">MORE</a>
                             </li>
                             <li class="time-line-item">
                                 <span class="badge badge-primary">2020 SUMMER</span>
