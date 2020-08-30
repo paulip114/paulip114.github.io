@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/css/live-resume.css">
-    <script src="./assets/js/share.js" async></script>
+    <script src="./assets/js/youtubePlayer.js" async></script>
 </head>
 
 <body>
@@ -21,9 +21,9 @@
         <p class="result"></p>
         <input type="hidden" id="content-to-copy" />
         <nav class="collapsible-nav" id="collapsible-nav">
-            <a href="index.html" class="nav-link active">HOME</a>
+            <a href="index.html" class="nav-link ">HOME</a>
             <!-- <a href="resume.html" class="nav-link">RESUME</a> -->
-            <a href="./programming.html" class="nav-link">PROGRAMMING</a>
+            <a href="./programming.html" class="nav-link active">PROGRAMMING</a>
             <a href="./photography/photography.html" class="nav-link">PHOTOGRAPHY</a>
             <a href="#" class="nav-link">BLOG</a>
             <a href="contact.html" class="nav-link">CONTACT</a>
@@ -85,15 +85,12 @@
         </aside>
         <main>
             <section class="intro-section">
-                <h2 class="section-title">Hello, </h2>
-                <p>I'm a software engineer and photographer from Hong Kong, studying in Taiwan National Chung Cheng
-                    University. I am interested in front-end technology, experienced in using React.js and React Native.
-                    Apart from front-end, I'm also interested in the field of Computer Vision. In Year 3 project, I used
-                    TensorFlow Inception-V3 model to classify customers' clothing attributes. That project won the
-                    champion in the school competition! Moreover, I am a freelance photographer. Experienced in both
-                    static photography and filming.</p>
-                <a href="#!" class="btn btn-warning btn-hire-me">PROGRAMMING WORKS</a>
-                <a href="./photography/photography.html" class="btn btn-warning btn-hire-me">PHOTOGRAPHY WORKS</a>
+                <h2 class="section-title">Project -- Deep Fashion</h2>
+                <p>I am the captain of this project team. The target of this project is using compter
+                    vision to classify costumers‘ clothing attributes. After that, we will use these
+                    attributes data for predicting the garment products which costumers will be
+                    interested. We used Inception-V3 model from Tensorflow to do the classification.</p>
+
             </section>
 
             <hr style="width: auto;height: 2px;" />
@@ -102,31 +99,37 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <!-- <h6 class="section-subtitle">RESUME</h6> -->
-                        <h2 class="section-title">EDUCATION</h2>
-                        <ul class="time-line">
-                            <li class="time-line-item">
-                                <span class="badge badge-primary">2017 - 2021</span>
-                                <h6 class="time-line-item-title">Bachelor In Management Informantion System</h6>
-                                <p class="time-line-item-subtitle">NATIONAL CHUNG CHENG UNIVERSITY</p>
-                                <p class="time-line-item-content">I learned programming, web
-                                    designing, accounting, management, etc. To fulfil my start-up dream, I joined the
-                                    Entrepreneurship and Innovation Society which provide many opportunities for
-                                    me to achieve my plan.</p>
-                            </li>
-                        </ul>
+                        <h2 class="section-title">Project Poster</h2>
+                        <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                            <img src="./assets/images/Project_Poster.png" style="width: 90%;" />
+                        </div>
+                        <div>
+                            <span
+                                style="display: flex; flex-direction: row; justify-content: space-around;margin-bottom: 50px;flex-wrap:wrap">
+                                <a href="https://www.youtube.com/watch?v=SoOVYdEBCEU" class="btn"
+                                    style="box-shadow: 0px 0px 10px 2px rgba(0, 103, 246, 0.5); display: flex; align-items: center; margin-top: 20px;width: 200px;">
+                                    <i class="fab fa-youtube" style="color: red;font-size: 30px;"></i>
+                                    &nbsp&nbsp&nbsp&nbsp Watch demo
+                                </a>
+
+                                <a href="https://github.com/paulip114/Deepfashion_Y3_project" class="btn"
+                                    style="box-shadow: 0px 0px 10px 2px rgba(0, 103, 246, 0.5); display: flex; align-items: center; margin-top: 20px;width: 200px;">
+                                    <i class="fab fa-github" style="color: black;font-size: 30px;"></i>
+                                    &nbsp&nbsp&nbsp&nbsp Source Code
+                                </a>
+                            </span>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <!-- <h6 class="section-subtitle">RESUME</h6> -->
-                        <h2 class="section-title">Experience</h2>
+                        <h2 class="section-title">Milestone</h2>
                         <ul class="time-line">
                             <li class="time-line-item">
-                                <span class="badge badge-primary">2015 - 2018</span>
-                                <h6 class="time-line-item-title">HONG KONG NATIONAL BASEBALL TEAM MEMBER</h6>
-                                <p class="time-line-item-subtitle">HONG KONG NATIONAL BASEBALL TEAM & JUNIOR SQUAD</p>
-                                <p class="time-line-item-content">Represented HONG KONG in Internation Baseball Games.
+                                <span class="badge badge-primary">2019 Sep</span>
+                                <h6 class="time-line-item-title">Formed a team of 4</h6>
+                                <!-- <p class="time-line-item-subtitle">HONG KONG NATIONAL BASEBALL TEAM & JUNIOR SQUAD</p> -->
+                                <p class="time-line-item-content">Started on researching the field of Computer Vision,
+                                    including: models, trends, similar projects, etc.
                                 </p>
-                                <a href="https://twbsball.dils.tku.edu.tw/wiki/index.php/%E8%91%89%E6%BE%A4%E9%82%A6"
-                                    target="_blank" class="btn btn-warning btn-more">MORE</a>
                             </li>
                             <li class="time-line-item">
                                 <span class="badge badge-primary">2018</span>
@@ -285,41 +288,11 @@
 
             </section>
             <hr style="height: 1px; margin: 50px;" />
-            <!-- <section class="testimonial-section">
-                <div id="testimonialCarousel" class="testimonial-carousel carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
-                                interdum sed tortor.</p>
-                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
-                            <p class="testimonial-name">Nout Golstein</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
-                                interdum sed tortor.</p>
-                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
-                            <p class="testimonial-name">Nout Golstein</p>
-                        </div>
-                        <div class="carousel-item">
-                            <p class="testimonial-content">Mauris magna sapien, pharetra consectetur fringilla vitae,
-                                interdum sed tortor.</p>
-                            <img src="assets/images/Profile.png" alt="profile" class="testimonial-img">
-                            <p class="testimonial-name">Nout Golstein</p>
-                        </div>
-                    </div>
-                    <ol class="carousel-indicators">
-                        <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#testimonialCarousel" data-slide-to="1"></li>
-                        <li data-target="#testimonialCarousel" data-slide-to="2"></li>
-                    </ol>
-                </div>
-            </section> -->
-
             <footer>PAUL's Resume build with <a href="https://www.bootstrapdash.com" target="_blank"
                     rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
         </main>
     </div>
-  
+
     <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
     <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
     <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
