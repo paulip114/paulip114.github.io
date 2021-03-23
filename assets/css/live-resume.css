@@ -7527,7 +7527,9 @@ aside .widget {
   font-weight: 500;
   line-height: 1;
   padding: 8px 10px;
-  margin: 5px; }
+  margin: 5px; 
+  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.2);
+}
 
 .btn-more {
   font-size: 14px;
@@ -7535,6 +7537,7 @@ aside .widget {
   line-height: 1;
   padding: 6px 6px; 
   margin-top: 8px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.2);
 }
 header {
   display: flex;
