@@ -7915,7 +7915,7 @@ main {
   main .blog-posts-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-evenly; }
     main .blog-posts-wrapper .blog-post {
       width: calc(33.33% - 15px);
       margin-bottom: 24px; }
