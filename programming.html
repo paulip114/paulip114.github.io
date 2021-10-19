@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paul's Resume</title>
+    <link rel="icon" href="./assets/images/ProfileIcon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/live-resume.css">
+    <script src="./assets/js/youtubePlayer.js" async></script>
+</head>
+
+<body>
+    <header>
+        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/share.svg"
+                alt="share" class="btn-img">
+            SHARE</button>
+        <p class="result"></p>
+        <input type="hidden" id="content-to-copy" />
+        <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="index.html" class="nav-link ">HOME</a>
+            <!-- <a href="resume.html" class="nav-link">RESUME</a> -->
+            <a href="./programming.html" class="nav-link active">PROGRAMMING</a>
+            <a href="./photography/photography.html" class="nav-link">PHOTOGRAPHY</a>
+            <a href="https://paultechdigital.wordpress.com/" class="nav-link">BLOG</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+        </nav>
+        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
+    </header>
+    <div class="content-wrapper">
+        <aside>
+            <div class="profile-img-wrapper">
+                <img src="assets/images/ProfileIcon.png" alt="profile">
+            </div>
+            <h1 class="profile-name">IP Chak Pong</h1>
+            <div class="text-center">
+                <span class="badge badge-white badge-pill profile-designation">Software Engineer</span>
+            </div>
+            <nav class="social-links">
+                <a href="https://www.facebook.com/paul.ip.5" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#!" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                <!-- <a href="#!" class="social-link"><i class="fab fa-behance"></i></a> -->
+                <a href="https://www.linkedin.com/in/ipchakpong/" class="social-link"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/paulip114" class="social-link"><i class="fab fa-github"></i></a>
+            </nav>
+            <div class="widget">
+                <h5 class="widget-title">personal information</h5>
+                <div class="widget-content">
+                    <p>BIRTHDAY : 14 January 1999</p>
+                    <!-- <p>WEBSITE : www.example.com</p> -->
+                    <p>PHONE : +886 0909538667</p>
+                    <p>E-MAIL : paulip114@gmail.com</p>
+                    <p>Location : TW / HK</p>
+                    <button class="btn btn-download-cv btn-primary rounded-pill"
+                        onclick="location.href='./photography/images/CV.pdf'" download="CV.pdf"> <img
+                            src="./assets/images/download.svg" alt="download" class="btn-img">DOWNLOAD CV </button>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">LANGUAGES</h5>
+                        <p>English : fluent</p>
+                        <p>Manderin : native</p>
+                        <p>Cantonese : native</p>
+                    </div>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">INTERESTS</h5>
+                        <p>Photography</p>
+                        <p>Filming</p>
+                        <p>Movies</p>
+                        <p>Baseball</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section class="blog-section">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="blog-posts-wrapper">
+                    <article class="blog-post">
+                        <div>
+                            <a href="#!" class="blog-post-link" data-toggle="modal" data-target="#videoModal"
+                                data-theVideo="https://www.youtube.com/embed/GSS7q2AeF0c">
+                                <img src="assets/images/News_1.jpg" alt="news 1" class="blog-post-thumbnail">
+                                <h5 class="blog-post-title">Deep Fashion in 2019</h5>
+                            </a>
+                            <p class="blog-post-meta">
+                                <span class="post-published-date">28 DEC 2019</span>
+                                <!-- <a href="#!" class="post-comments">3 COMMENTS</a> -->
+                            </p>
+
+                            <!-- Modal -->
+                            <div class="modal fade " id="videoModal" tabindex="-1" role="dialog"
+                                aria-labelledby="videoModal" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" style="max-width: 600px;">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div>
+                                                <iframe width="100%" height="350" src="" style="margin-top: 20px;"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                            <div style="display: flex; justify-content: center;">
+                                                <a href="https://youtu.be/GSS7q2AeF0c" class="btn btn-hire-me"
+                                                    style="width: 200px; background-color:#FF0000;font-size: 16px;color: #FFF; justify-items: center; margin:10px"
+                                                    target="_blank">Watch it on YouTube
+                                                </a>
+                                                <a href="./programming-DeepFashion.html"
+                                                    class="btn btn-hire-me btn-primary"
+                                                    style="width: 200px;font-size: 16px;color: #FFF; justify-items: center; margin:10px">
+                                                    More about this project
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="blog-post">
+                        <a href="programming-CCUPairs.html" class="blog-post-link">
+                            <img src="assets/images/CCUPairs/ICON.png" alt="news 1" class="blog-post-thumbnail">
+                            <h5 class="blog-post-title">CCUPairs</h5>
+                        </a>
+                        <p class="blog-post-meta">
+                            <span class="post-published-date">22 FEB 2021</span>
+                        </p>
+                    </article>
+                    <article class="blog-post">
+                        <a href="programming-TaiwanScenicSpots.html" class="blog-post-link">
+                            <img src="assets/images/ScenicSpots.jpg" alt="news 1" class="blog-post-thumbnail">
+                            <h5 class="blog-post-title">Taiwan Scenic Spots Introduction</h5>
+                        </a>
+                        <p class="blog-post-meta">
+                            <span class="post-published-date">31 MAR 2021</span>
+                        </p>
+                    </article>
+                    <!-- <article class="blog-post">
+                        <a href="#!" class="blog-post-link">
+                            <img src="assets/images/News_2.jpg" alt="news 2" class="blog-post-thumbnail">
+                            <h5 class="blog-post-title">Design Conferences in 2019</h5>
+                        </a>
+                        <p class="blog-post-meta">
+                            <span class="post-published-date">28 DEC 2019</span>
+                            <a href="#!" class="post-comments">3 COMMENTS</a>
+                        </p>
+                    </article>
+                    <article class="blog-post">
+                        <a href="#!" class="blog-post-link">
+                            <img src="assets/images/News_3.jpg" alt="news 3" class="blog-post-thumbnail">
+                            <h5 class="blog-post-title">Design Conferences in 2019</h5>
+                        </a>
+                        <p class="blog-post-meta">
+                            <span class="post-published-date">28 DEC 2019</span>
+                            <a href="#!" class="post-comments">3 COMMENTS</a>
+                        </p>
+                    </article>
+                    <article class="blog-post">
+                        <a href="#!" class="blog-post-link">
+                            <img src="assets/images/News_4.jpg" alt="news 4" class="blog-post-thumbnail">
+                            <h5 class="blog-post-title">Design Conferences in 2019</h5>
+                        </a>
+                        <p class="blog-post-meta">
+                            <span class="post-published-date">28 DEC 2019</span>
+                            <a href="#!" class="post-comments">3 COMMENTS</a>
+                        </p>
+                    </article>
+                    <article class="blog-post">
+                        <a href="#!" class="blog-post-link">
+                            <img src="assets/images/News_5.jpg" alt="news 5" class="blog-post-thumbnail">
+                            <h5 class="blog-post-title">Design Conferences in 2019</h5>
+                        </a>
+                        <p class="blog-post-meta">
+                            <span class="post-published-date">28 DEC 2019</span>
+                            <a href="#!" class="post-comments">3 COMMENTS</a>
+                        </p>
+                    </article>
+                    <article class="blog-post">
+                        <a href="#!" class="blog-post-link">
+                            <img src="assets/images/News_6.jpg" alt="news 6" class="blog-post-thumbnail">
+                            <h5 class="blog-post-title">Design Conferences in 2019</h5>
+                        </a>
+                        <p class="blog-post-meta">
+                            <span class="post-published-date">28 DEC 2019</span>
+                            <a href="#!" class="post-comments">3 COMMENTS</a>
+                        </p>
+                    </article> -->
+                </div>
+            </section>
+
+            <footer>PAUL's Resume build with <a href="https://www.bootstrapdash.com" target="_blank"
+                    rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
+        </main>
+    </div>
+
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/live-resume.js"></script>
+</body>
+
+</html>

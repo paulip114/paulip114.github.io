@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paul's Resume</title>
+    <link rel="icon" href="./assets/images/ProfileIcon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/live-resume.css">
+    <script src="./assets/js/youtubePlayer.js" async></script>
+</head>
+
+<body>
+    <header>
+        <button class="btn btn-white btn-share ml-auto mr-3 ml-md-0 mr-md-auto"><img src="assets/images/share.svg"
+                alt="share" class="btn-img">
+            SHARE</button>
+        <p class="result"></p>
+        <input type="hidden" id="content-to-copy" />
+        <nav class="collapsible-nav" id="collapsible-nav">
+            <a href="index.html" class="nav-link ">HOME</a>
+            <!-- <a href="resume.html" class="nav-link">RESUME</a> -->
+            <a href="./programming.html" class="nav-link active">PROGRAMMING</a>
+            <a href="./photography/photography.html" class="nav-link">PHOTOGRAPHY</a>
+            <a href="https://paultechdigital.wordpress.com/" class="nav-link">BLOG</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+        </nav>
+        <button class="btn btn-menu-toggle btn-white rounded-circle" data-toggle="collapsible-nav"
+            data-target="collapsible-nav"><img src="assets/images/hamburger.svg" alt="hamburger"></button>
+    </header>
+    <div class="content-wrapper">
+        <aside>
+            <div class="profile-img-wrapper">
+                <img src="assets/images/ProfileIcon.png" alt="profile">
+            </div>
+            <h1 class="profile-name">IP Chak Pong</h1>
+            <div class="text-center">
+                <span class="badge badge-white badge-pill profile-designation">Software Engineer</span>
+            </div>
+            <nav class="social-links">
+                <a href="https://www.facebook.com/paul.ip.5" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#!" class="social-link"><i class="fab fa-twitter"></i></a> -->
+                <!-- <a href="#!" class="social-link"><i class="fab fa-behance"></i></a> -->
+                <a href="https://www.linkedin.com/in/ipchakpong/" class="social-link"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/paulip114" class="social-link"><i class="fab fa-github"></i></a>
+            </nav>
+            <div class="widget">
+                <h5 class="widget-title">personal information</h5>
+                <div class="widget-content">
+                    <p>BIRTHDAY : 14 January 1999</p>
+                    <!-- <p>WEBSITE : www.example.com</p> -->
+                    <p>PHONE : +886 0909538667</p>
+                    <p>E-MAIL : paulip114@gmail.com</p>
+                    <p>Location : TW / HK</p>
+                    <button class="btn btn-download-cv btn-primary rounded-pill"
+                        onclick="location.href='./photography/images/CV.pdf'" download="CV.pdf"> <img
+                            src="./assets/images/download.svg" alt="download" class="btn-img">DOWNLOAD CV </button>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">LANGUAGES</h5>
+                        <p>English : fluent</p>
+                        <p>Manderin : native</p>
+                        <p>Cantonese : native</p>
+                    </div>
+                </div>
+            </div>
+            <div class="widget card">
+                <div class="card-body">
+                    <div class="widget-content">
+                        <h5 class="widget-title card-title">INTERESTS</h5>
+                        <p>Photography</p>
+                        <p>Filming</p>
+                        <p>Movies</p>
+                        <p>Baseball</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <section class="intro-section">
+                <h2 class="section-title">Project -- Deep-Fashion</h2>
+                <p>I am the captain of this project team. The target of this project is using compter
+                    vision to classify costumers‘ clothing attributes. After that, we will use these
+                    attributes data for predicting the garment products which costumers will be
+                    interested. We used Inception-V3 model from Tensorflow to do the classification.</p>
+                    <img src="./assets/images/fashionshop.jpg" style="width: 100%;" />
+            </section>
+
+            <hr style="width: auto;height: 2px;" />
+
+            <section class="resume-section">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- <h6 class="section-subtitle">RESUME</h6> -->
+                        <h2 class="section-title">Project details</h2>
+                        <!-- <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                            <div>
+                                <img src="./assets/images/Project_Poster.png" style="width: 90%;" />
+                            </div>
+                        </div> -->
+                        <div>
+                            <h4>DeepFashion ver.1.0 -- Customer clothing detection + In-shop LED Navigation</h4>
+                            <img src="./assets/images/DeepFashion detection.PNG" style="width: 100%;"/>
+                            <img src="./assets/images/DeepFashion 1.0 IoT.PNG" style="width: 100%;" />
+                        </div>
+                        <div>
+                            <span
+                                style="display: flex; flex-direction: row; justify-content: space-around;margin-bottom: 50px;flex-wrap:wrap">
+                                <a href="https://youtu.be/SoOVYdEBCEU" class="btn"
+                                    style="box-shadow: 0px 0px 10px 2px rgba(0, 103, 246, 0.5); display: flex; align-items: center; margin-top: 20px;width: 200px;">
+                                    <i class="fab fa-youtube" style="color: red;font-size: 30px;"></i>
+                                    &nbsp&nbsp&nbsp&nbsp Watch demo
+                                </a>
+                            </span>
+                        </div>
+
+                       <div><hr style="width:80%"></div><br>
+                        
+                        <div>
+                            <h4>DeepFashion ver.2.0 -- Customer clothing detection + In-shop AR Navigation</h4>
+                            <img src="./assets/images/DeepFashion 2.0 logo.PNG" style="width: 100%;" />
+                            <img src="./assets/images/DeepFashion 2.0 AR.PNG" style="width: 100%;" />
+                            <img src="./assets/images/DeepFashion 2.0 AR_2.PNG" style="width: 100%;" />
+                            <img src="./assets/images/system architecture.PNG" style="width: 100%;" />
+                        </div>
+                        <div>
+                            <span
+                                style="display: flex; flex-direction: row; justify-content: space-around;margin-bottom: 50px;flex-wrap:wrap">
+                                <a href="https://youtu.be/GSS7q2AeF0c" class="btn"
+                                    style="box-shadow: 0px 0px 10px 2px rgba(0, 103, 246, 0.5); display: flex; align-items: center; margin-top: 20px;width: 200px;">
+                                    <i class="fab fa-youtube" style="color: red;font-size: 30px;"></i>
+                                    &nbsp&nbsp&nbsp&nbsp Watch demo
+                                </a>
+
+                                <a href="https://github.com/paulip114/Deepfashion_Y3_project" class="btn"
+                                    style="box-shadow: 0px 0px 10px 2px rgba(0, 103, 246, 0.5); display: flex; align-items: center; margin-top: 20px;width: 200px;">
+                                    <i class="fab fa-github" style="color: black;font-size: 30px;"></i>
+                                    &nbsp&nbsp&nbsp&nbsp Source Code
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Milestone</h2>
+
+                        <ul class="time-line">
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2019 Sep</span>
+                                <h6 class="time-line-item-title">Formed a team of 4</h6>
+                                <p class="time-line-item-content">Started to study the field of Computer Vision,
+                                    including: models, trends, similar projects, etc.
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2020 May</span>
+                                <h6 class="time-line-item-title">Champion in CCU MIS Project Competition</h6>
+                                <p class="time-line-item-content">We made a 3D model and a Inception-V3 model to show how it works. The judges are intersted in our project.
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2020 Sep</span>
+                                <h6 class="time-line-item-title">Formed a team of 8</h6>
+                                <p class="time-line-item-content">Since we want to improve the accuracy of the prediction model and rebuild the 3D model of fashion shop,
+                                    new members are invited into my team. We used Yolo v3 instead of Inception-V3 which can do the detection much faster. 
+                                    Apart from the prediction model, we used blender to render the 3D model and added lighting effects.
+                                </p>
+                            </li>
+                            <li class="time-line-item">
+                                <span class="badge badge-primary">2020 Nov</span>
+                                <h6 class="time-line-item-title">Represented CCU to participate "International ICT Innovative Serivces Awards 2020"</h6>
+                                <p class="time-line-item-content">"International ICT Innovative Serivces Awards 2020"「2020第25屆大專校院資訊應用服務創新競賽」
+                                </p>
+                            </li>
+                        </ul>
+                        <div><hr style="width:80%"></div><br>
+                        <h2 class="section-title">Team Members</h2>
+                        <img src="./assets/images/團體照-英文隊.png" style="width: 100%;" />
+                    </div>
+                </div>
+            </section>
+            <!-- <hr style="width: auto;height: 2px;" /> -->
+            <!-- <section class="services-section">
+                <h6 class="section-subtitle">What I know</h6>
+                <h2 class="section-title">My Skills</h2>
+                <div class="row">
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/001-target.svg" alt="target">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Web Designing</h5>
+                            <p class="service-description">HTML & CSS</p>
+                            <div class="progress" style="width: 50%; margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">85%
+                                </div>
+                            </div>
+                            <p class="service-description">bootstrap</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
+                                </div>
+                            </div>
+                            <p class="service-description">React.js</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">65%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/003-idea.svg" alt="bulb">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Graphic design</h5>
+                            <p class="service-description">Adobe PS</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">80%
+                                </div>
+                            </div>
+                            <p class="service-description">Adobe AI</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
+                                </div>
+                            </div>
+                            <p class="service-description">Adobe PR</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">75%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/002-development.svg" alt="development">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Development</h5>
+                            <p class="service-description">Python</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
+                                </div>
+                            </div>
+                            <p class="service-description">Java</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
+                                </div>
+                            </div>
+                            <p class="service-description">C#</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">50%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media service-card col-lg-6">
+                        <div class="service-icon">
+                            <img src="assets/images/004-smartphone.svg" alt="smartphone">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="service-title">Mobile design</h5>
+                            <p class="service-description">React Native</p>
+                            <div class="progress" style="width: 50%;margin: 5px 10px;">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">70%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section> -->
+            <hr style="height: 1px; margin: 50px;" />
+            <footer>PAUL's Resume build with <a href="https://www.bootstrapdash.com" target="_blank"
+                    rel="noopener noreferrer">BootstrapDash</a>. All Rights Reserved 2020</footer>
+        </main>
+    </div>
+
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendors/@popperjs/core/dist/umd/popper-base.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/live-resume.js"></script>
+</body>
+
+</html>
