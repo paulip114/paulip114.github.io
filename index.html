@@ -2,14 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          if (stored === "light" || stored === "dark") {
+            document.documentElement.setAttribute("data-theme", stored);
+          }
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Ip Chak Pong (Paul) — SRE / AIOps / IT Operations portfolio." />
     <title>Ip Chak Pong</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800;900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-    <script type="module" crossorigin src="/assets/index-fA4LRMY-.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BTm8wrt6.css">
+    <script type="module" crossorigin src="/assets/index-DKcbDYu0.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Cw7uEjGy.css">
   </head>
   <body>
     <div id="root"></div>
