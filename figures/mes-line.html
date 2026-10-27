@@ -115,6 +115,8 @@ body{margin:0;background:var(--anatomy-page);color:var(--anatomy-text);font:14px
 html,body{background:transparent}
 .iso-page{width:100%;margin:0}
 .iso-figure{margin:0}
+html.is-fullscreen,html.is-fullscreen body{background:var(--anatomy-page);overflow:auto}
+html.is-fullscreen .iso-page{width:min(100vw - 48px,(100vh - 48px) * 1.45);margin:24px auto}
 </style><style>
 .mes-well{fill:var(--anatomy-shade-0)}
 .mes-scan{fill:none;stroke:var(--anatomy-faint);stroke-width:.4px;vector-effect:non-scaling-stroke;opacity:.6}
@@ -151,8 +153,13 @@ html,body{background:transparent}
   apply();
   dark.addEventListener("change", apply);
   if (host) new MutationObserver(apply).observe(host, { attributes: true, attributeFilter: ["data-theme"] });
+  if (host) {
+    // Full screen is requested on this iframe by the host page; size the plate to the screen.
+    const screen = () => document.documentElement.classList.toggle("is-fullscreen", !!frame && host.ownerDocument.fullscreenElement === frame);
+    host.ownerDocument.addEventListener("fullscreenchange", screen);
+  }
   if (frame) {
-    const fit = () => { frame.style.height = Math.ceil(document.documentElement.scrollHeight) + "px"; };
+    const fit = () => { if (host && host.ownerDocument.fullscreenElement === frame) return; frame.style.height = Math.ceil(document.documentElement.scrollHeight) + "px"; };
     new ResizeObserver(fit).observe(document.body);
     fit();
   }
